@@ -1,4 +1,19 @@
-body {
-  background: blue; }
+.space {
+  width: 200px;
+  height: 200px;
+  border: 1px solid blue; }
+
+.gameBoard {
+  width: 600px;
+  height: 600px;
+  display: flex;
+  justify-content: space-around; }
+
+.playerMark {
+  font-size: 150px;
+  margin: 0px; }
+
+.row-1 {
+  margin: 0px; }
 
 /*# sourceMappingURL=output.css.map */

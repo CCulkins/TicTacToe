@@ -33,32 +33,28 @@ var winningPlayArray = [winningPlay1, winningPlay2, winningPlay3, winningPlay4, 
 for (var index = 0; index < winningPlayArray.length; index += 1) {
   var print = winningPlayArray[index].valueOf();
 	console.log(print);
+}
   if (print === "XXX") {
     console.log("winner");
     } else {
     console.log("loser!");
-  }
+  };
+
+// function changeColor() {
+//   document.getElementById("space1").style.background = "red";
+// }
+//
+// function changeMark() {
+//   document.getElementById("pSpace1").innerHTML.replace("red");
+// }
+
+const space1 = document.getElementById("space1").style.background = "red";
+const toggleColor = document.querySelector('.space');
+
+toggleColor.addEventListener('click', () => {
+  if (space1.style.background == 'red') {
+  space1.style.background = 'white';
+} else {
+  space1.style.background = 'red';
 }
-
-// if (winningPlay1 || winningPlay2 || winningPlay3 ||
-// winningPlay4 || winningPlay5 || winningPlay6 ||
-// winningPlay7 || winningPlay8) === 'XXX') {
-//
-// console.log("playerOneWins");
-// } if else {
-// console.log("nope");
-// }
-
-
-//
-// var space = {
-// space1 = [];
-// space2 = [];
-// space3 = [];
-// space4 = [];
-// space5 = [];
-// space6 = [];
-// space7 = [];
-// space8 = [];
-// space9 = [];
-// }
+});
